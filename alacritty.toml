@@ -1,0 +1,6 @@
+live_config_reload = true
+
+[font]
+normal = { family = "Fira Code Nerd Font", style = "Normal" }
+bold = { family = "Fira Code Nerd Font", style = "Bold" }
+italic = { family = "Fira Code Nerd Font", style = "Italic" }
