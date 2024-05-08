@@ -1,12 +1,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="jonathan"
+ZSH_THEME="agnoster"
 
 CASE_SENSITIVE="false"
 
-plugins=(git tmux fzf)
-
-source $ZSH/oh-my-zsh.sh
+plugins=(git tmux fzf docker)
 
 zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 DISABLE_UNTRACKED_FILES_DIRTY="true"
@@ -68,7 +66,6 @@ HISTFILE=~/.zsh_history
 autoload -Uz compinit
 compinit
 
-
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
@@ -86,3 +83,6 @@ zstyle ':completion:*' verbose true
 
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
+source $ZSH/oh-my-zsh.sh
+
